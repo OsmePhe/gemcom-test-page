@@ -1,0 +1,145 @@
+.hero-section {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 48px;
+}
+
+.hero-title {
+  width: 536px;
+  text-align: center;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.25px;
+  color: #161723;
+}
+
+.hero-content {
+  width: 1170px;
+  height: 370px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.features-group {
+  width: 370px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 24px;
+  height: 85px;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+}
+
+.feature-text {
+  width: 286px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  h3 {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 600;
+    font-size: 19px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #161723;
+  }
+
+  p {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #424153;
+  }
+}
+
+.hero-image {
+  width: 370px;
+  height: 370px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.hero-cta {
+  width: 462px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.cta-button {
+  width: 462px;
+  height: 48px;
+  padding: 12px 40px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #f87171;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+
+  &.hovered {
+    opacity: 0.9;
+  }
+}
+
+.guarantee-row {
+  width: 462px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.guarantee-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  .guarantee-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .guarantee-text {
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 0.5px;
+    color: #424153;
+  }
+}
+
+.payment-icons {
+  display: flex;
+  gap: 8px;
+
+  img {
+    height: 24px;
+  }
+}
