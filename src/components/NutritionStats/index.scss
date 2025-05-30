@@ -17,7 +17,6 @@
     height: 571px;
     display: flex;
     flex-direction: column;
-    gap: 48px;
     padding-right: 32px;
 
     .nutrition-title {
@@ -27,8 +26,9 @@
       line-height: 120%;
       letter-spacing: 0.25px;
       color: #161723;
-      width: 538px;
+      width: 110%;
       height: 96px;
+      margin: 0px;
     }
 
     .nutrition-subtitle {
@@ -48,6 +48,7 @@
       gap: 16px;
 
       .points-title {
+        display: flex;
         font-size: 19px;
         font-weight: 600;
         color: #161723;
@@ -59,7 +60,8 @@
       .point {
         display: flex;
         gap: 48px;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         width: 538px;
         height: 50px;
 
@@ -75,10 +77,11 @@
         }
 
         .point-text {
+          text-align: left;
           font-size: 16px;
           font-weight: 400;
           line-height: 150%;
-          letter-spacing: 0.5px;
+          letter-spacing: 0.4px;
           color: #424153;
           width: 423px;
           height: 48px;
@@ -90,6 +93,7 @@
     .nutrition-cta {
       width: 538px;
       height: 48px;
+      margin-top: 80px;
       padding: 12px 40px;
       border-radius: 6px;
       background: #ee6f4b;

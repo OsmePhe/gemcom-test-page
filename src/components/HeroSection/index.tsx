@@ -42,11 +42,14 @@ const HeroSection = (): JSX.Element => {
           </div>
         </div>
 
-        <img
-          src="/assets/kibble.svg"
-          alt="Dog food bowl"
-          className="hero-image"
-        />
+        <div className="hero-image">
+          <img src="/assets/kibble.svg" alt="Dog food bowl" />
+          <img
+            src="/assets/kibblemask.svg"
+            alt="kibblemask"
+            className="hero-image-kibblemask"
+          />
+        </div>
 
         <div className="features-group">
           <div className="feature-item">
@@ -103,6 +106,7 @@ const HeroSection = (): JSX.Element => {
             <img src="/assets/visa.svg" alt="Visa" />
             <img src="/assets/mastercard.svg" alt="Mastercard" />
             <img src="/assets/applepay.svg" alt="Apple Pay" />
+            <img src="/assets/googlepay.svg" alt="Google Pay" />
           </div>
         </div>
       </div>

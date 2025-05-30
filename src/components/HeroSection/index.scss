@@ -5,7 +5,7 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 50px;
-  gap: 48px;
+  gap: 0px;
 }
 
 .hero-title {
@@ -21,7 +21,7 @@
 
 .hero-content {
   width: 1170px;
-  height: 370px;
+  height: 335px;
   display: flex;
   justify-content: space-between;
   gap: 30px;
@@ -38,7 +38,7 @@
 
 .feature-item {
   display: flex;
-  gap: 24px;
+  align-items: center;
   height: 85px;
 }
 
@@ -53,10 +53,13 @@
   height: 85px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  margin-left: 15px;
 
   h3 {
     font-family: 'Inter Tight', sans-serif;
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: -10px;
     font-weight: 600;
     font-size: 19px;
     line-height: 150%;
@@ -66,6 +69,7 @@
 
   p {
     font-family: 'Inter Tight', sans-serif;
+    text-align: left;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -75,10 +79,26 @@
 }
 
 .hero-image {
-  width: 370px;
-  height: 370px;
-  object-fit: cover;
+  width: 325px;
+  height: 325px;
   border-radius: 9999px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-image-kibblemask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 162px;
+    height: 325px;
+    object-fit: cover;
+  }
 }
 
 .hero-cta {
@@ -86,7 +106,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
 }
 
 .cta-button {
@@ -112,7 +132,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 24px;
+  gap: 10px;
 }
 
 .guarantee-info {
