@@ -1,54 +1,95 @@
-# React + TypeScript + Vite
+# GemCommerce - Test Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a front-end implementation for the **Customer Success Associate** technical test requested by GemCommerce.
 
-Currently, two official plugins are available:
+The project is built with **React**, **TypeScript**, **SCSS**, and structured for clarity and maintainability. It contains 3 main sections from a Figma design:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- `HeroSection`
+- `NutritionStats`
+- `GutHealthSection`
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting Started
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/OsmePhe/gemcom-test-page.git
+cd gemcom-test-page
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+No script modifications have been made to package.json. The default vite dev server is used.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Folder Structure
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```text
+project-root/
+│
+├── assets/
+│
+├── src/
+│ ├── components/
+│ │ ├── HeroSection/
+│ │ │ ├── index.tsx
+│ │ │ └── index.scss
+│ │ ├── NutritionStats/
+│ │ │ ├── index.tsx
+│ │ │ └── index.scss
+│ │ └── GutHealthSection/
+│ │ ├── index.tsx
+│ │ └── index.scss
+│ │
+│ ├── App.tsx
+│ └── main.tsx
+│
+├── index.html
+├── package.json
+└── vite.config.ts
 ```
+
+## Explanation of the Structure
+
+### HeroSection
+
+- Displays the main title, 4 grouped feature blocks (icon + title + text), a hero image, a CTA, and payment icons.
+
+- Layout is horizontally centered.
+
+- Main container uses flex with space between.
+
+- Images are circular and use object-fit: cover.
+
+- SCSS is modular and scoped inside the component folder.
+
+### NutritionStats
+
+- A two-column layout: left side includes a title, subtitle, statistics, and CTA; right side shows an image.
+
+- Typography and spacing match Figma's exact specs (px, gap, font-size, etc.).
+
+- Responsive width is considered with width: 100% for main sections.
+
+- All text blocks use the Inter Tight font family.
+
+### GutHealthSection
+
+- Contains two stacked horizontal blocks, each divided into left (image/text) and right (text/image).
+
+- Each block follows the fixed Figma layout.
+
+- Carefully aligned based on pixel values.
+
+- Rounded image corners and consistent spacing throughout.
+
+## Technical Choices
+
+- Used React with TypeScript for type safety and clarity.
+
+- SCSS for styling, allowing nested rules and modular design.
+
+- Chose a static and pixel-accurate layout for initial delivery, keeping responsiveness minimal.
+
+- Developed with Visual Studio Code.
